@@ -37,7 +37,7 @@ BEDFLOOD is a tool designed for launching **Denial of Service (DoS)** attacks on
     - To check the server status directly with the api provided by **[mcstatus.io](https://mcstatus.io)**. Use the parameter **python3 bedflood.py -api < IP Address >**
 
 ## How to use
-1. You must have **Python 3.xx**.If you don't have it you can download and install **Python** from [here](https://www.python.org/downloads/).<br>
+1. You must have **Python 3.xx**. If you don't have it you can download and install **Python** from [here](https://www.python.org/downloads/).<br>
     After that run this command in your terminal
     ```bash
     python3 --version
@@ -70,7 +70,9 @@ BEDFLOOD is a tool designed for launching **Denial of Service (DoS)** attacks on
 <h1 align="center">WARNING</h1>
 
 **BEDFLOOD** is developed strictly for **educational** and **research** purposes within a **controlled environment**. This tool must only be used with the **explicit permission** of the **server owner**.
+
 Any **unauthorized use**, including attempting to **disrupt**, **overload**, or **damage** servers, is strictly **prohibited** and may be considered **illegal** under applicable laws. Such actions can lead to **severe consequences** for both the target systems and the individuals involved.
+
 Please use this tool **responsibly** and **only** for legitimate **security testing** and **academic purposes**. **Misuse** of this tool is **unethical**, potentially **unlawful**, and strongly **discouraged**.
 
 ## Ethical Guidelines
