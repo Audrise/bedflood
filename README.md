@@ -34,7 +34,7 @@ BEDFLOOD is a tool designed for launching **Denial of Service (DoS)** attacks on
     - Uses a lock mechanism to ensure that multiple operations (like counting the total packets sent) don't conflict with each other.
 
 - **Check Server Status**:
-    - To check the server status directly with the api provided by [mcstatus.io](https://mcstatus.io/), use the parameter **python3 bedflood.py -api <IP Address>**
+    - To check the server status directly with the api provided by **[mcstatus.io](https://mcstatus.io)**. Use the parameter **python3 bedflood.py -api < IP Address >**
 
 ## How to use
 1. You must have **Python 3.xx**.If you don't have it you can download and install **Python** from [here](https://www.python.org/downloads/).<br>
@@ -80,4 +80,5 @@ Unauthorized use to attack or overload servers is illegal and can cause serious 
 - **Never attempt to attack a public or private server without authorization.**
 
 ## Credits
-Thanks to **[BillyTheGoat356](https://github.com/billythegoat356)** to provide the **[PyStyle](https://github.com/billythegoat356/pystyle.git)** module for very nice terminal styling and **[Hyperion](https://github.com/billythegoat356/hyperion.git)** for nice obfuscation tool
+- Thanks to **[BillyTheGoat356](https://github.com/billythegoat356)** to provide the **[PyStyle](https://github.com/billythegoat356/pystyle.git)** module for very nice terminal styling and **[Hyperion](https://github.com/billythegoat356/hyperion.git)** for nice obfuscation tool
+- Thanks to **[mcstatus.io](https://mcstatus.io)** To provide an API for checking servers very easily and quickly.
