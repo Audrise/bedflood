@@ -69,9 +69,9 @@ BEDFLOOD is a tool designed for launching **Denial of Service (DoS)** attacks on
 
 <h1 align="center">WARNING</h1>
 
-**BEDFLOOD** is intended solely for educational purposes in a controlled environment. 
-Use this tool **only** with explicit permission from the server owner. 
-Unauthorized use to attack or overload servers is illegal and can cause serious damage. **Please use this tool responsibly and **only** for authorized testing and research purposes. Unauthorized use is illegal and can cause significant harm** and **Please use this tool responsibly and **only** for authorized testing and research purposes. Unauthorized use is illegal and can cause significant harm.**
+**BEDFLOOD** is developed strictly for **educational** and **research** purposes within a **controlled environment**. This tool must only be used with the **explicit permission** of the **server owner**.
+Any **unauthorized use**, including attempting to **disrupt**, **overload**, or **damage** servers, is strictly **prohibited** and may be considered **illegal** under applicable laws. Such actions can lead to **severe consequences** for both the target systems and the individuals involved.
+Please use this tool **responsibly** and **only** for legitimate **security testing** and **academic purposes**. **Misuse** of this tool is **unethical**, potentially **unlawful**, and strongly **discouraged**.
 
 ## Ethical Guidelines
 - **Do not use this tool on any server without explicit permission.**
