@@ -7,13 +7,13 @@
 
 <div align=center>
     <img src="https://img.shields.io/badge/Python-FFDD00?style=for-the-badge&logo=python&logoColor=blue"/>
-    <img src="https://img.shields.io/badge/Version-1.1 BE-blue?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/Version-1.2 BE-blue?style=for-the-badge"/>
     <br>
     <img src="https://img.shields.io/github/stars/Audrise/bedflood?style=social">
 </div>
 
 ## Description
-BEDFLOOD is a tool designed for launching **Denial of Service (DoS)** attacks on Minecraft Bedrock Edition servers. This tool floods the server with multiple methods to overload the server’s resources, resulting in an unresponsive state.
+**BEDFLOOD** is a tool designed for launching **Denial of Service (DoS)** attacks on Minecraft Bedrock Edition servers. This tool floods the server with multiple methods to overload the server’s resources, resulting in an unresponsive state.
 
 ## Features
 
@@ -67,7 +67,7 @@ BEDFLOOD is a tool designed for launching **Denial of Service (DoS)** attacks on
     ```
 <br>
 
-<h1 align="center">WARNING</h1>
+<h1 align="center"><strong>WARNING</strong></h1>
 
 **BEDFLOOD** is developed strictly for **educational** and **research** purposes within a **controlled environment**. This tool must only be used with the **explicit permission** of the **server owner**.
 
@@ -84,3 +84,21 @@ Please use this tool **responsibly** and **only** for legitimate **security test
 ## Credits
 - Thanks to **[BillyTheGoat356](https://github.com/billythegoat356)** which provides the **[PyStyle](https://github.com/billythegoat356/pystyle.git)** module for very nice terminal styling and **[Hyperion](https://github.com/billythegoat356/hyperion.git)** for nice obfuscation tool
 - Thanks to **[mcstatus.io](https://mcstatus.io)** which provides API to check server easily and quickly.
+
+## **Latest Update**
+#### **1.2-BE**
+In this version, every time a target is launched, important execution details will be automatically logged to a file named **target_history.txt**. This includes:
+
+``` bash
+=============================
+- Date       : 09 July 2025
+- Time       : II:MM AM/PM
+- IP         : 127.0.0.1
+- Port       : 8080
+- Bot Counts : 5 Bots
+- Skin Dir   : skins
+- Chat File  : chat.txt
+- Intensity  : Level 3
+- Duration   : 60 Seconds
+=============================
+```
