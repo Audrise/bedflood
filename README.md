@@ -7,7 +7,7 @@
 
 <div align=center>
     <img src="https://img.shields.io/badge/Python-FFDD00?style=for-the-badge&logo=python&logoColor=blue"/>
-    <img src="https://img.shields.io/badge/Version-1.2 BE-blue?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/Version-1.2-BE-blue?style=for-the-badge"/>
     <br>
     <img src="https://img.shields.io/github/stars/Audrise/bedflood?style=social">
 </div>
