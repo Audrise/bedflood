@@ -7,7 +7,7 @@
 
 <div align=center>
     <img src="https://img.shields.io/badge/Python-FFDD00?style=for-the-badge&logo=python&logoColor=blue"/>
-    <img src="https://img.shields.io/badge/Version-1.2 BE-blue?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/Version-1.3 BE-blue?style=for-the-badge"/>
     <br>
     <img src="https://img.shields.io/github/stars/Audrise/bedflood?style=social">
 </div>
@@ -37,7 +37,7 @@
     - To check the server status directly with the api provided by **[mcstatus.io](https://mcstatus.io)**. Use the parameter **python3 bedflood.py -api < IP Address >**
 
 ## How to use
-1. You must have **Python 3.xx**. If you don't have it you can download and install **Python** from [here](https://www.python.org/downloads/).<br>
+1. You must have **Python 3.xx**. If you don't have it you can download and install [**Python**](https://www.python.org/downloads/).<br>
     After that run this command in your terminal
     ```bash
     python3 --version
@@ -102,3 +102,49 @@ In this version, every time a target is launched, important execution details wi
 - Duration   : 60 Seconds
 =============================
 ```
+
+#### **1.3-BE**
+- Improved -s (Skin Directory) Argument Handling
+We’ve added validation checks for the -s argument to make the script more robust and user-friendly:
+
+    - 📁 The script now checks if the provided skin directory exists.
+
+    - 📄 It also verifies that at least one .json skin file is present in the directory.
+
+    - 🚫 If validation fails, the script will display a friendly error message and exit gracefully.
+
+<br>
+
+- Enhanced Payload in make_login_packet Function
+We’ve significantly improved the structure of the payload used in the make_login_packet function. The new payload includes more detailed skin information to provide greater flexibility and control over the skin-related data sent.
+
+    - Changes:
+    Additional fields added: More data points for handling custom skin settings such as **SkinGeometry**, **CapeData**, **ArmSize**, and **Skin animation data**.
+
+    - Support for premium and trusted skins: More detailed flags like **PremiumSkin**, **PersonaSkin**, **TrustedSkin**, and **IsTrustedSkin** ensure smoother skin handling with different use cases.
+
+    - Default values for all fields: In case any of the skin parameters are missing, the payload will fall back to predefined defaults.
+    
+    **Payload Example:**
+    ```bash
+    {
+        "username": "YourUsername",
+        "SkinId": "Standard_Custom",
+        "PlayFabId": "00000000-0000-0000-0000-000000000000",
+        "SkinResourcePatch": "",
+        "SkinGeometry": "",
+        "SkinGeometryData": "",
+        "SkinData": "",
+        "CapeId": "",
+        "CapeData": "",
+        "ArmSize": "wide",
+        "SkinAnimationData": "",
+        "PremiumSkin": false,
+        "PersonaSkin": false,
+        "CapeOnClassicSkin": false,
+        "TrustedSkin": true,
+        "FullSkinId": "Standard_Custom_Full",
+        "OverwriteSkinAnimation": false,
+        "IsTrustedSkin": true
+    } 
+    ```
