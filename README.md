@@ -113,8 +113,6 @@ We’ve added validation checks for the -s argument to make the script more robu
 
     - 🚫 If validation fails, the script will display a friendly error message and exit gracefully.
 
-<br>
-
 - Enhanced Payload in make_login_packet Function
 We’ve significantly improved the structure of the payload used in the make_login_packet function. The new payload includes more detailed skin information to provide greater flexibility and control over the skin-related data sent.
 
