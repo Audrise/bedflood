@@ -1,0 +1,19 @@
+{
+  "SkinId": "wmorrow3286",
+  "PlayFabId": "2dd44fe7-e285-4e6d-9edb-f89e0b78eb9e",
+  "SkinResourcePatch": "{\"geometry\":{\"default\":\"geometry.humanoid.custom\"}}",
+  "SkinGeometry": "geometry.humanoid.custom",
+  "SkinGeometryData": "{ \"format_version\": \"1.12.0\", \"minecraft:geometry\": [ { \"description\": { \"identifier\": \"geometry.humanoid.custom\", \"visible_bounds_width\": 2, \"visible_bounds_height\": 3, \"visible_bounds_offset\": [0, 1, 0] }, \"bones\": [] } ] }",
+  "SkinData": "base64_encoded_64x64_or_128x128_png_data",
+  "CapeId": "",
+  "CapeData": "",
+  "ArmSize": "wide",
+  "SkinAnimationData": "",
+  "PremiumSkin": false,
+  "PersonaSkin": false,
+  "CapeOnClassicSkin": false,
+  "TrustedSkin": true,
+  "FullSkinId": "minecraft:wmorrow3286_full",
+  "OverwriteSkinAnimation": false,
+  "IsTrustedSkin": true
+}
