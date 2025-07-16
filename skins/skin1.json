@@ -1,7 +1,0 @@
-{
-  "SkinId": "Standard_Custom",
-  "SkinResourcePatch": "some_patch_data",
-  "SkinGeometry": "some_geometry_data",
-  "SkinGeometryData": "some_geometry_data_2",
-  "SkinData": "base64_encoded_skin_texture_data"
-}
