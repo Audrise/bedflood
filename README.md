@@ -37,17 +37,13 @@
     - To check the server status directly with the api provided by **[mcstatus.io](https://mcstatus.io)**. Use the parameter **python3 bedflood.py -api < IP Address >**
 
 ## How to use
-1. You must have **Python 3.xx**. If you don't have it you can download and install [**Python**](https://www.python.org/downloads/).<br>
-    After that run this command in your terminal
-    ```bash
-    python3 --version
-    ```
-2. Clone this repository to your local machine:
+
+1. Clone this repository to your local machine:
     ```bash
     git clone https://github.com/Audrise/bedflood.git
     cd bedflood
     ```
-3. Install the necessary Python libraries:
+2. Install the necessary Python libraries:
     ```bash
     pip3 install -r requirements.txt
     ```
@@ -56,14 +52,14 @@
     pip3 install pystyle requests pycryptodome
     ```
 
-4. To run BEDFLOOD, open a terminal and use the following command:
+3. To run BEDFLOOD, open a terminal and use the following command:
     ```bash
     python3 bedflood.py -ip [IP Address] -port [Port] -b [Bot Counts] -s [Skin Directory] -c [Chatfile.txt] -i [Intensity 1-5] -d [Duration]
     ```
 
     Example
     ```bash
-    python3 bedflood.py -ip 120.0.0.1 -port 19132 -b 100 -s skins - c chat.txt -i 3 -d 60
+    python3 bedflood.py -ip 120.0.0.1 -port 19132 -b 100 -s skins - c chat.txt -i 3 -d 30
     ```
 <br>
 
@@ -86,63 +82,31 @@ Please use this tool **responsibly** and **only** for legitimate **security test
 - Thanks to **[mcstatus.io](https://mcstatus.io)** which provides API to check server easily and quickly.
 
 ## **Latest Update**
-#### **1.2-BE**
-In this version, every time a target is launched, important execution details will be automatically logged to a file named **target_history.txt**. This includes:
 
-``` bash
-=============================
-- Date       : 09 July 2025
-- Time       : II:MM AM/PM
-- IP         : 127.0.0.1
-- Port       : 8080
-- Bot Counts : 5 Bots
-- Skin Dir   : skins
-- Chat File  : chat.txt
-- Intensity  : Level 3
-- Duration   : 60 Seconds
-=============================
-```
+### **1.4-BE**
+- **Added input mode**
 
-#### **1.3-BE**
-- Improved -s (Skin Directory) Argument Handling
-We’ve added validation checks for the -s argument to make the script more robust and user-friendly:
+    When you are prompted to enter a value (such as **IP address, port, bot count, skin directory, chatfile, intensity, duration**), if you type **"retry"**, the program will restart the input process from the beginning, effectively resetting the entire data entry. This feature is useful if you realize the data entered was incorrect, or if you simply want to start over without restarting the entire script.
 
-    - 📁 The script now checks if the provided skin directory exists.
+- **Example Usage:**
 
-    - 📄 It also verifies that at least one .json skin file is present in the directory.
-
-    - 🚫 If validation fails, the script will display a friendly error message and exit gracefully.
-
-- Enhanced Payload in make_login_packet Function
-We’ve significantly improved the structure of the payload used in the make_login_packet function. The new payload includes more detailed skin information to provide greater flexibility and control over the skin-related data sent.
-
-    - Changes:
-    Additional fields added: More data points for handling custom skin settings such as **SkinGeometry**, **CapeData**, **ArmSize**, and **Skin animation data**.
-
-    - Support for premium and trusted skins: More detailed flags like **PremiumSkin**, **PersonaSkin**, **TrustedSkin**, and **IsTrustedSkin** ensure smoother skin handling with different use cases.
-
-    - Default values for all fields: In case any of the skin parameters are missing, the payload will fall back to predefined defaults.
-    
-    **Payload Example:**
+    Here is an example of an input section that you can use to return to the beginning using **"retry"**
     ```bash
-    {
-        "username": "YourUsername",
-        "SkinId": "Standard_Custom",
-        "PlayFabId": "00000000-0000-0000-0000-000000000000",
-        "SkinResourcePatch": "",
-        "SkinGeometry": "",
-        "SkinGeometryData": "",
-        "SkinData": "",
-        "CapeId": "",
-        "CapeData": "",
-        "ArmSize": "wide",
-        "SkinAnimationData": "",
-        "PremiumSkin": false,
-        "PersonaSkin": false,
-        "CapeOnClassicSkin": false,
-        "TrustedSkin": true,
-        "FullSkinId": "Standard_Custom_Full",
-        "OverwriteSkinAnimation": false,
-        "IsTrustedSkin": true
-    } 
+    [?] Enter the IP Address ->
+    [?] Enter the port [Press enter to set 19132] ->
+    [?] Enter the bot counts [Press enter for default] ->
+    [?] Enter the skin file [Press enter for default] ->
+    [?] Enter the chat file [Press enter for default] ->
+    [?] Enter the intensity [Press enter for default] ->
+    [?] Enter the duration [Press enter for infinity] -> 
     ```
+    This will take you back to the initial input step, allowing you to re-enter the IP address.
+
+- #### **Benefits of the "retry" Feature:**
+    - **Fixing Mistakes**: You can easily correct mistakes in your inputs without restarting the entire program.
+    - **Flexibility**: If you're unsatisfied with the data you've entered, simply type **"retry"** to start over and input the correct values.
+    - **Better User Experience**: It allows users to correct errors quickly without significant interruptions, enhancing the overall comfort of using the program.
+
+- #### **Important Notes:**
+    - You can use **"retry"** on any input, except on the **"Press enter to exit"** section.
+    - The program will continue to ask for correct data and restart the input process as needed, without needing to stop or restart the script.
