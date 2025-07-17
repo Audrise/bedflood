@@ -102,7 +102,7 @@ python3 bedflood.py -ip 127.0.0.1 -port 19132 -b 10 -s skins -c chat.txt -i 1 -d
     The message below will appear in your terminal
     ```bash
     [!] You're using scheduled attack mode
-    [!] Flood attack will be launched in [int value Seconds
+    [!] Flood attack will be launched in [int value Seconds]
     ```
     The program will not **flood** the target before the value on the scheduled is exhausted or 0
 
