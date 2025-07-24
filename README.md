@@ -7,7 +7,7 @@
 
 <div align=center>
     <img src="https://img.shields.io/badge/Python-FFDD00?style=for-the-badge&logo=python&logoColor=blue"/>
-    <img src="https://img.shields.io/badge/Version-1.3 BE-blue?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/Version-1.4 BE-blue?style=for-the-badge"/>
     <br>
     <img src="https://img.shields.io/github/stars/Audrise/bedflood?style=social">
 </div>
@@ -33,6 +33,15 @@
 - **Multithreading**:
     - Uses a lock mechanism to ensure that multiple operations (like counting the total packets sent) don't conflict with each other.
 
+- **RakNet ping flood**
+    - Sends RakNet Unconnected Ping packets to trigger server responses and increase network load.
+
+- **RakNet handshake spam**
+    - Abuses RakNet handshake steps (Open Connection Request 1 & 2) to overload session management on the server.
+
+- **Send malformed packets**
+    - Sends intentionally broken or random packets to disrupt packet parsing and stress the server's network stack.
+
 - **Check Server Status**:
     - To check the server status directly with the api provided by **[mcstatus.io](https://mcstatus.io)**. Use the parameter **python3 bedflood.py -api < IP Address >**
 
@@ -54,7 +63,7 @@
 
 3. To run BEDFLOOD, open a terminal and use the following command:
     ```bash
-    python3 bedflood.py -ip [IP Address] -port [Port] -b [Bot Counts] -s [Skin Directory] -c [Chatfile.txt] -i [Intensity 1-5] -d [Duration]
+    python3 bedflood.py -ip [IP Address] -port [Port] -b [Bot Counts] -s [Skin Directory] -c [Chatfile.txt] -i [Intensity 1-10] -d [Duration]
     ```
 
     Example
