@@ -7,7 +7,7 @@
 
 <div align=center>
     <img src="https://img.shields.io/badge/Python-FFDD00?style=for-the-badge&logo=python&logoColor=blue"/>
-    <img src="https://img.shields.io/badge/Version-1.4 BE-blue?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/Version-1.5-blue?style=for-the-badge"/>
     <br>
     <img src="https://img.shields.io/github/stars/Audrise/bedflood?style=social">
 </div>
@@ -92,7 +92,7 @@ Please use this tool **responsibly** and **only** for legitimate **security test
 
 ## **Latest Update**
 
-### **1.4-BE - Scheduled Attack Mode** 📌
+### **1.5 - Scheduled Attack Mode** 📌
 The Scheduled Attack Mode allows you to schedule an attack with a countdown timer before it starts. This feature is useful for giving yourself preparation time before the attack executes automatically.
 
 #### **How It Works:**
