@@ -109,7 +109,7 @@ The Delay Attack Mode allows you to schedule an attack with a countdown timer be
 
 #### **How It Works:**
 
-When using the **-Delay** parameter, you specify the countdown duration (in seconds).
+When using the **-delay** parameter, you specify the countdown duration (in seconds).
 The program displays a real-time countdown from the duration you set.
 
 #### Example usage:
@@ -136,4 +136,5 @@ python3 bedflood.py -ip 127.0.0.1 -port 19132 -b 10 -s skins -c chat.txt -i 1 -d
 <br>
 
 <h1></h1>
+
 <h4 align="center">©AUDRISE</h4>
